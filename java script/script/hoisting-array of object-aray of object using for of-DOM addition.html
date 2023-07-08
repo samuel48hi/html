@@ -1,0 +1,117 @@
+Hoisting:
+
+<script>
+
+console.log("Result of 2 values",+addition(203,55));
+
+function addition(a,b){
+    return a + b;
+}
+
+</script>
+===========================
+array of object:
+<script>
+
+var students = [
+
+{
+fullName:"sam",
+age:23,
+DOB:"22/1/2000"
+},
+{
+fullName:"kiran",
+age:24,
+DOB:"22/1/2001"
+},
+{
+fullName:"peter",
+age:25,
+DOB:"22/1/2004"
+},
+{
+fullName:"samual",
+age:18,
+DOB:"22/1/2010"
+},
+{
+fullName:"jack",
+age:23,
+DOB:"22/1/2004"
+},
+
+];
+//console.log(students);
+//console.log(students[4]);
+console.log(students[4].fullName);
+
+</script>
+======================
+Array of object using for of()
+<script>
+
+var students = [
+
+{
+fullName:"sam",
+age:23,
+DOB:"22/1/2000"
+},
+{
+fullName:"kiran",
+age:24,
+DOB:"22/1/2001"
+},
+{
+fullName:"peter",
+age:25,
+DOB:"22/1/2004"
+},
+{
+fullName:"samual",
+age:18,
+DOB:"22/1/2010"
+},
+{
+fullName:"jack",
+age:23,
+DOB:"22/1/2004"
+},
+
+];
+for(var list of students){
+    console.log(list.fullName,list.age,list.DOB);
+}
+
+</script>
+
+==================
+DOM Input values:
+<html>
+<head>
+
+</head>
+<body>
+
+<input type="text" id="one"/> <br><br>
+<input type="text" id="two"/> <br><br>
+<button onclick="onSubmit()">Submit</button>
+<div id="demo"></div>
+
+</body>
+<script>
+
+var a,b;
+function onSubmit(){
+    a = document.getElementById("one").value;
+    b = document.getElementById("two").value;
+    var result = Number(a) + Number(b);
+    document.getElementById("demo").innerHTML="Addition of 2 values"+result;
+     document.getElementById("one").value="";
+     document.getElementById("two").value="";
+}
+
+</script>
+
+</html>

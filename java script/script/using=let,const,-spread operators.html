@@ -1,0 +1,137 @@
+Let
+
+<!-- <script>
+
+    var fullname = "akash";
+    var fullname = "suresh";
+    console.log(fullname);
+</script> -->
+
+<script>
+let fullname ="akash";
+let fullname = "suresh";
+console.log(fullname);
+
+</script>
+<script>
+
+    {
+var address = "chennai";
+console.log(address);
+
+    }
+    
+</script>
+
+<!-- <script>
+{
+let address = "chennai";
+console.log(address);
+
+    }
+    
+
+
+</script> -->
+Const:
+
+<script>
+
+ const a = 34;
+ a = 33;
+ console.log(a);
+    
+</script>
+
+===========================
+<!-- <script>
+
+    function addition(a,b){
+        return a+b;
+    }
+    console.log(addition(3,4));
+</script> -->
+
+<script> // Arrow function
+addition =(a,b)=>{
+return a+b;
+}
+console.log(addition(30,40));
+
+</script>
+==============================
+
+Spread operator:
+<!-- <script>
+
+    let list = [2,3,5];
+    let listtwo = list;
+    listtwo.push(44);
+    console.log(list);
+    console.log(listtwo);
+
+
+
+
+</script> -->
+
+<script>
+
+    let list = [2,3,5];
+    let listtwo = [...list]; //spread operator - use to copy array or object
+    listtwo.push(44);
+    console.log(list);
+    console.log(listtwo);
+
+
+
+
+</script>
+
+====================
+Spread operator ( Arrays and Objects)
+<script>
+
+let student = {
+fullName:"akash",
+age:23
+
+}
+let student1 = {...student}
+student1.address = "chennai";
+console.log(student);
+console.log(student1);
+
+
+</script>
+
+===========================
+Destructuring :
+
+<!-- <script>
+
+let list = [33,22,44];
+let a= list[0];
+let b= list[1];
+let c= list[2];
+console.log(a,b,c);
+
+</script> -->
+
+<script>
+let list7 = [332,221,44];
+let [aa,b,c] = list7; //Destructuring - used only in Arrays and objects
+console.log(a,b,c);
+
+</script>
+<script>
+    let list1={
+        name:"akash",
+        age:33
+    }
+    let obj={
+        address:"chennai"
+    }
+   let {age,name,address}= {...list1,...obj};
+   console.log(name,age,address);
+</script>

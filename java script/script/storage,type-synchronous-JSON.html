@@ -1,0 +1,83 @@
+two types of storage in web: storing data on the client/browser
+1. session storage - store data for one session ( if browser tab closes then data is lost)
+2. local storage -store data with no validty or expiry date.  
+
+<script>
+//sessionStorage.setItem("fullName","kumar");
+let name= sessionStorage.getItem("fullName");
+console.log(name);
+</script>
+
+<script>
+
+    localStorage.setItem("fullName","akash");
+    let names = localStorage.getItem("fullName");
+    console.log(names);
+    localStorage.removeItem("fullName");
+</script>
+
+JSON - Javascript object notation - data interchange format
+for storing and transmitting data. To send data from server to web page .
+<script>
+
+let obj ={
+
+    fullName : "albert",
+    age : 23,
+};
+console.log(typeof obj);
+console.log(obj.age);
+let list = JSON.stringify(obj); // convert JS object to JSON string
+console.log(typeof list);
+console.log(list.age);
+list = JSON.parse(list); // convert JSON string to JS object
+console.log(typeof list);
+console.log(list.age);
+
+
+</script>
+
+Synchoronous and Asynchoronous:
+
+Sync - code will execute step by step. Each instrcution waits for the previous instruction
+to complete the execution
+Asyn - it will allows to execute next instruction immediately and it does not block the flow.
+
+<script>
+setTimeout(()=>{
+
+console.log("it will execute in 10 seconds");
+},10000)
+
+let firstName = "kumar";
+console.log(firstName);
+function addition(a,b){
+
+    console.log("inside funtion");
+    return a+b;
+}
+console.log("outside the function");
+addition(3,4);
+</script>
+===========================================
+set timeout() - to executes a block of code after some specified time. It will execute code only once
+set interval() - to set a delay for function - repeated execution
+
+Set timeout()
+<script>
+setTimeout(()=>{
+alert("function will be called in 2 seconds");
+
+},2000)
+
+</script>
+
+set interval() 
+
+<script>
+setInterval(()=>{
+alert("every 4 seconds it will be called");
+
+},4000)
+
+</script>

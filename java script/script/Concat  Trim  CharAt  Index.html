@@ -1,0 +1,63 @@
+<!-- EVENTS - OnClick -->
+<html>
+    <head>
+
+    </head>
+    <body>
+<button onclick="onSubmit()">Submit </button>
+
+    </body>
+    <script>
+function onSubmit(){
+    alert("This is called Onclick event")
+}
+
+    </script>
+</html>
+
+<!-- Events  -  OnChange -->
+<html>
+    <head>
+    </head>
+    <body>
+<input type="text" onchange="Onchangehandler()">
+    </body>
+    <script>
+
+        function Onchangehandler(){
+            alert("This is called Onchange event");
+        }
+    </script>
+</html>
+
+<!-- Concat Method() -->
+<script>
+var fullName = "AKASH";
+var lastName = "Sharma";
+var result = fullName.concat(lastName); 
+console.log(result);
+
+</script>
+
+<!-- Trim() - To remove blank spaces -->
+<script>
+var fullName = "AKASH   ";
+var result = fullName.trim();
+console.log(result.length);
+
+
+</script>
+<!-- charAt() - method returns the character at a specified index (position) in a string -->
+<script>
+var fullName = "AKASH";
+var result = fullName.charAt(4);
+console.log(result);
+</script> 
+
+<!-- indexof() - method returns the position of the first occurrence of a specified value in a string -->
+<script>
+
+    var fullName ="IMPORTANT";
+    var result = fullName.indexOf('R');
+    console.log(result);
+    </script>
