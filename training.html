@@ -1,0 +1,136 @@
+<html>
+    <head>
+
+    <title>try</title>
+      
+    <link rel="stylesheet"  href="training.css"  >
+    </head> 
+<body class="f">
+   
+
+    
+    <h1> This is a new try</h1>
+    <h2 style="border-style: inherit;"> This is a new try</h2>
+    <h3> This is a new try</h3>
+    <h4> This is a new try</h4>
+    <h5> This is a new try</h5>
+    <h6> This is a new try</h6>
+    
+    <p class="air a">hi guys</p>
+    <p class="air a">welcome to my dummy site</p>
+    <i>hi guys</i>
+    <b>hi guys</b>
+    <table border="7" width="400px" bgcolor="blue" cellspacing="20px">
+    <tr >
+        <th class="b">uo</th>
+        <th class="b">ioi</th>  
+        <th class="b">ni</th>
+    </tr>
+    <tr>
+        <td class="b">li</td>
+        <td class="b">oijo</td>
+        <td class="b">nkj</td>
+    </tr>
+    <tc>
+        <td class="b">rere</td>
+        <td class="b">rer</td>
+    </tc>
+    </table><br><br>
+    <p class="a air">****************</p>
+    <hr>
+    <hr><br><br>
+    <table border="7"  class="a" cellpadding="15px" cellspacing="15px">
+        <colgroup>
+        <col span="1" style="background-color: aquamarine ;"> 
+        <col span="1" style="background-color:rgb(63, 120, 168) ;">
+        </colgroup>
+        <thead>
+            <tr>
+                <td class="td" style="background-image:url(img2.jpg);">laptop</td>
+                <td>pc</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>i51240p processor</td>
+                <td class="td g" style="background-image:url(images/download\ \(1\).jpg);">pendium</td>
+            </tr>
+        </tbody>
+    </table><br><br>
+    <input type="submit"  value="done" ><br><br>
+    name:<input type="text" name="name"><br><br>
+    email:<input type="email" name="name" ><br><br>
+    sports:<input type="checkbox" value="cc" name="cc">cc
+    <input type="checkbox" value="hk" name="hk">hk<br><br>
+    skills:
+    <select>
+        <option value="py" name="py">py</option>
+        <option value="css" name="css">css</option>
+    </select><br><br>
+
+
+
+    <h1>learn java script</h1>
+   
+
+    <p id="demo"> hi guys</p>
+    <button type="button" onclick="mysubfunction()">check me </button>
+
+
+    <p id="subdemo" >cheese</p>
+    <button type="button" onclick="myfunction()">check</button> <br><br>
+
+    phone_no:<input type="number" name="phone_no" placeholder="enter your phone_no" ><br><br>
+    Email_id:<input type="email" name="Email" placeholder="enter your Email_id"><br><br>
+    <input type="button" id="trialbutton" onclick="checkbutton()" name="set" value="check" placeholder="check">
+    
+    <p id="demo1"> </p>
+
+    <button type="button" class="a air" onclick="doubletap()">click me</button>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <button type="button" class="a air button_none" id="gg" onclick="removeDialog()">removedetails</button>
+
+    <div id="demo">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        </div>
+        
+        <script>
+        function loadDoc() {
+          const xhttp = new XMLHttpRequest();
+          xhttp.onload = function() {
+            document.getElementById("demo").innerHTML =
+            this.responseText;
+          }
+          xhttp.open("GET", "http://localhost/training/ajax_info.txt");
+          xhttp.send();
+        }
+        </script>
+ 
+ <p><button  onclick="anime()" >click me</button></p>
+ <div id="first-div">
+     <div id="second-div"></div>
+ </div>
+ <script>
+    function anime(){
+        let id=null;
+        const elem=document.getElementById("second-div");
+        let pos= 1;
+        clearInterval(id);
+        id = setInterval(frame, 0);
+    function frame() {
+        if (pos == 175) {
+        clearInterval(id);
+        } else {
+        pos++; 
+        elem.style.bottom = pos + "px"; 
+        elem.style.left = pos + "px"; 
+        }
+    }
+    }
+        
+ </script>
+    <script src="javascript.js"></script>   
+</body>   
+</html>

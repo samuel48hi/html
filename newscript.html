@@ -1,0 +1,145 @@
+<html>
+    <head></head>
+    <body>
+<script>
+// 
+
+
+
+
+// var list =[23,34,55,67,888,999];
+// var j=list.sort(function(a,b){
+//      return b-a
+// })
+// for(var i =0;i<j.length;i++)
+// console.log(list[i]);
+// for(var i =list.length-1;i>=0;i--)
+// console.log(list[i]);
+
+
+// for(var i =5;i>=1;i--){
+//     console.log(i);
+// }
+// for (var k=0;k<-5;i--){
+//     console.log(k);
+// }
+
+// -------------------------->
+
+var list =[23,34,[6,7,8,99,6,54],55,67,888,999];
+for(var obj of list){
+    console.log(obj);
+    if(Array.isArray(obj)){
+        for(var des of obj){
+        
+            console.log(des);
+        }
+    }
+}
+var array=[22,33,44,55,"sam","jack","revi"];
+// var newarray=[array.pop(5)]
+var index=array.indexOf("sam");
+if(index > -1){
+   array.splice(index,1);
+}
+console.log(array)   
+
+var students=[
+    {
+        name:"jhon",
+        age:17,
+        tatalscores:446,
+        idno:28995959,
+    },
+    {
+        name:"ram",
+        age:12,
+        tatalscores:436,
+        idno:28995959,
+    },
+    {
+        name:"sam",
+        age:16,
+        tatalscores:416,
+        idno:28995959,
+    },
+    {
+        name:"sono",
+        age:16,
+        tatalscores:450,
+        idno:28995959,
+    },
+];
+console.log(students);
+console.log(students[3]);
+console.log(students[3].age);
+for(var list of students);
+console.log(list.name,list.age);
+
+var employee={
+    name:'sam',
+    age:'16',
+}
+employee.city='chennai';
+employee.address='coimbatore';
+employee.phno=1234567890;
+delete employee.age;
+console.log(employee)
+var key=Object.keys(employee);
+var value=Object.values(employee);
+console.log(key);
+console.log(value);
+  
+var list=[12,34,56,'hi','hello','gosh']
+var string=list.toString();
+console.log(string);
+var strcheck =typeof string;
+console.log(strcheck);
+   
+var list=[12,34,56,[11,25,47,'ooi','music','song'],'hi','hello','gosh',[1,2,3,4,56,]]
+// for(var ary of list);
+for( var ary0 of list[3])
+console.log(ary0[1]);
+// console.log(ary);
+// console.log(list);
+
+// ------------------------------------->
+
+
+class applicationid{
+    constructor(fullname,age,bloodgroup,address){
+        this.fullname=fullname;
+        this.age=age;
+        this.bloodgroup=bloodgroup;
+        this.address=address;
+    }
+    ageupdate(input){
+        this.age=input;
+    }
+    addressupdate(input){
+        this.address=input;
+    }
+}
+
+var samid=new applicationid("sam",21,"A1+ive","kanyakumari");
+console.log(samid);
+
+let joelid=new applicationid("joel",22,"B1-ive","kanyakumari");
+console.log(joelid);
+joelid.ageupdate(25);
+joelid.addressupdate("marthandam");
+console.log(joelid);
+
+class amound extends applicationid{
+    constructor(fullname,age,bloodgroup,address,amount){
+    super(fullname,age,bloodgroup,address)
+    this.amount=amount;
+}
+}
+let sam = new amound ("sam",21,"A1+ive","kanyakumari",25000);
+console.log(sam);
+</script>
+<button type="submit" onclick="onalert()">check</button>
+<input type="text" onchange="changeon()" >
+    </body>
+</html>
